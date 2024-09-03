@@ -10,11 +10,12 @@ connectDB();
 
 const app = express();
 // Use CORS middleware
-app.use(cors({
-    origin: 'http://localhost:3001', // allow requests from this origin
-    methods: ['GET', 'POST', 'PUT', 'DELETE'], // allowed HTTP methods
-    credentials: true // if you need to include cookies in the requests
-}));
+// app.use(cors({
+//     origin: 'http://localhost:3001', // allow requests from this origin
+//     methods: ['GET', 'POST', 'PUT', 'DELETE'], // allowed HTTP methods
+//     credentials: true // if you need to include cookies in the requests
+// }));
+app.use(cors());
 app.use(express.json());
 
 
